@@ -14,7 +14,7 @@ use REST\PlayBundle\Entity\LocationSchema;
 use REST\PlayBundle\Entity\Post;
 use REST\PlayBundle\Entity\PostSchema;
 
-class JsonApiConfig
+class ExampleConfig implements ConfigInterface
 {
     public static function getConfig()
     {
