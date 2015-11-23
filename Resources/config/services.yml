@@ -1,5 +1,4 @@
 parameters:
-#    acme.demo.example.class: Acme\DemoBundle\Example
   json_api.symfony_integration.class: Elytus\LimoncelloBundle\Integration\SymfonyIntegration
   json_api.controller_listener: Elytus\LimoncelloBundle\EventListener\ControllerListener
 
