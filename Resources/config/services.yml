@@ -1,0 +1,17 @@
+parameters:
+#    acme.demo.example.class: Acme\DemoBundle\Example
+  json_api.symfony_integration.class: Elytus\LimoncelloBundle\Integration\SymfonyIntegration
+  json_api.controller_listener: Elytus\LimoncelloBundle\EventListener\ControllerListener
+
+services:
+  json_api.symfony_integration:
+    class: %json_api.symfony_integration.class%
+    calls:
+      - [ setContainer, [ @service_container ] ]
+
+  json_api.controller_listener:
+    class: %json_api.controller_listener%
+    calls:
+      - [ setContainer, [ @service_container ] ]
+    tags:
+      - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }

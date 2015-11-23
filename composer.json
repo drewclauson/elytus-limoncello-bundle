@@ -1,0 +1,38 @@
+{
+  "name": "drewclauson/elytus-limoncello-bundle",
+  "description": "Allows symfony integration with json-api framework agnostic library (neomerx/limoncello)",
+  "type": "symfony-bundle",
+  "keywords": [
+    "jsonapi.org",
+    "json-api",
+    "jsonapi",
+    "neomerx",
+    "json",
+    "api",
+    "symfony",
+    "framework",
+    "limoncello"
+  ],
+  "homepage": "https://github.com/drewclauson/elytus-limoncello-bundle",
+  "support": {
+    "issues": "https://github.com/drewclauson/elytus-limoncello-/issues"
+  },
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "drewclauson",
+      "email": "dclauson@elytus.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "symfony/symfony": "~2.6.7|~2.7.0",
+    "neomerx/limoncello": "^0.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Elytus\\LimoncelloBundle\\": ""
+    }
+  }
+}
+
