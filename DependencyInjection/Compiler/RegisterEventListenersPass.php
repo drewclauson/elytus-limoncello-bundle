@@ -12,6 +12,7 @@ use Elytus\LimoncelloBundle\EventListener\ControllerListener;
 use Elytus\LimoncelloBundle\Integration\SymfonyIntegration;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Reference;
 
 class RegisterEventListenersPass implements CompilerPassInterface
 {
