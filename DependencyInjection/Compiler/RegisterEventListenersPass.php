@@ -6,7 +6,7 @@
  * Time: 1:24 PM
  */
 
-namespace Elytus\LimoncelloBundle\DependencyInjection;
+namespace Elytus\LimoncelloBundle\DependencyInjection\Compiler;
 
 use Elytus\LimoncelloBundle\EventListener\ControllerListener;
 use Elytus\LimoncelloBundle\Integration\SymfonyIntegration;

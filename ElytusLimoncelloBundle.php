@@ -2,7 +2,7 @@
 
 namespace Elytus\LimoncelloBundle;
 
-use Elytus\LimoncelloBundle\DependencyInjection\RegisterEventListenersPass;
+use Elytus\LimoncelloBundle\DependencyInjection\Compiler\RegisterEventListenersPass;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
