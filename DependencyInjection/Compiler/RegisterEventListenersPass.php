@@ -8,8 +8,8 @@
 
 namespace Elytus\LimoncelloBundle\DependencyInjection;
 
+use Elytus\LimoncelloBundle\EventListener\ControllerListener;
 use Elytus\LimoncelloBundle\Integration\SymfonyIntegration;
-use Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
