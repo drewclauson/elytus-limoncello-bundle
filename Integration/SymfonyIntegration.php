@@ -29,7 +29,7 @@ class SymfonyIntegration extends ContainerAware implements IntegrationInterface
      */
     public function getConfig()
     {
-        $config = $this->getFromContainer('json_api.config');
+        $config = $this->getFromContainer('json_api.config')->getConfig();
         /** @noinspection PhpUndefinedClassInspection */
         $config[C::JSON][C::JSON_URL_PREFIX] = $this->getCurrentRequest()->getSchemeAndHttpHost();
 
