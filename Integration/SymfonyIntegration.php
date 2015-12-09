@@ -1,24 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: dclauson
- * Date: 11/19/2015
- * Time: 10:57 AM
- */
 
 namespace Elytus\LimoncelloBundle\Integration;
 
+use Elytus\LimoncelloBundle\Config\JsonApiConfig;
 use Neomerx\Limoncello\Config\Config as C;
 use Neomerx\Limoncello\Contracts\IntegrationInterface;
-use Elytus\LimoncelloBundle\Config\JsonApiConfig;
-use Symfony\Component\DependencyInjection\ContainerAware;
-use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class SymfonyIntegration extends ContainerAware implements IntegrationInterface
+class SymfonyIntegration implements IntegrationInterface
 {
-
+    use ContainerAwareTrait;
+    
     /**
      * @var Request
      */
