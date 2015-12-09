@@ -82,7 +82,7 @@ class SymfonyIntegration implements IntegrationInterface
     public function getCurrentRequest()
     {
         if ($this->currentRequest === null) {
-            $this->currentRequest = $this->container->get('request');
+            $this->currentRequest = $this->container->get('request_stack')->getCurrentRequest();
         }
 
         return $this->currentRequest;
