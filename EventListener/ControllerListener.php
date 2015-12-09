@@ -2,14 +2,15 @@
 
 namespace Elytus\LimoncelloBundle\EventListener;
 
-use Neomerx\Limoncello\Http\AppServiceProviderTrait;
 use Elytus\LimoncelloBundle\Controller\JsonApiController;
-use Symfony\Component\DependencyInjection\ContainerAware;
+use Neomerx\Limoncello\Http\AppServiceProviderTrait;
+use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 
-class ControllerListener extends ContainerAware
+class ControllerListener
 {
     use AppServiceProviderTrait;
+    use ContainerAwareTrait;
 
     public function onKernelController(FilterControllerEvent $event)
     {
